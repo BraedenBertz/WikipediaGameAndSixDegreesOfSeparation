@@ -28,7 +28,6 @@ public interface IFrontendDeveloper {
    * We will initialize the BackendDeveloper here with the start page and end page
    * and then call the getShortestPaths method on another thread.
    */
-  @FXML
   void handleStartButtonOnClick();
 
   /**
@@ -37,14 +36,6 @@ public interface IFrontendDeveloper {
    * @return The html content of the page.
    */
   String getWikiPageFromTitle(String startPage);
-
-  /**
-   * Called when the user clicks on the WebView. Increment one to the counter
-   * if the user clicked on a link.
-   * Loads the wiki page that the user clicked on.
-   */
-  @FXML
-  void handleWebViewMouseClicked(MouseEvent mouseEvent);
 
   /**
    * Sets the webview to the given html content.

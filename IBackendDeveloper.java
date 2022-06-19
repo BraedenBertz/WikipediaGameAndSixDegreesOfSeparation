@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.List;
 //--== CS400 Project One File Header ==--
 //Name: Maicheng Thao
@@ -15,20 +16,20 @@ import java.util.List;
 public interface IBackendDeveloper {
   
   /**
-   * Adds the page and all links on that page into the graph
-   * 
-   * @param page the page to put into the graph
-   */
-  public void addPage(String page);
-  
-  /**
    * Receives starting and ending points from FD, pass this information to AE to get the shortest
    * paths 
    * 
    * @param start the start page
    * @param end the end page
-   * @return list of all shortest paths
+   * @return list of all shortest paths 
    */
-  List<String> getPaths(String start, String end);
+  List<String> getShortestPaths(String start, String end) throws IOException;
 
+  /**
+   * validate start and end pages for FD
+   *
+   * @param start the start page
+   * @return string of url to first page
+   */
+  Boolean validatePages(String start, String end);
 }

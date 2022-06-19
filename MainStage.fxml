@@ -14,7 +14,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.web.WebView?>
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="476.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontendDeveloper">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="476.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontendDeveloper">
    <children>
       <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -27,7 +27,7 @@
                <Button fx:id="startButton" mnemonicParsing="false" text="Start Game" onMouseClicked="#handleStartButtonOnClick"/>
                <Button fx:id="endButton" mnemonicParsing="false" text="End Current Game" onMouseClicked="#handleEndButtonOnClick"/>
             </HBox>
-            <WebView fx:id="webView" prefHeight="-1.0" prefWidth="612.0" VBox.vgrow="ALWAYS" onMouseClicked="#handleWebViewMouseClicked" />
+            <WebView fx:id="webView" prefHeight="-1.0" prefWidth="612.0" VBox.vgrow="ALWAYS"/>
          </children>
       </VBox>
    </children>

@@ -30,7 +30,7 @@ public final class Main extends Application {
   public void start(Stage primaryStage) throws Exception{
     Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MainStage.fxml")));
     primaryStage.setTitle("Wiki Game");
-    primaryStage.setScene(new Scene(root, 500, 500));
+    primaryStage.setScene(new Scene(root, 800, 800));
     primaryStage.show();
   }
 }
